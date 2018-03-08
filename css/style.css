@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  background: #e2ddd7;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+header {
+  background: #af0505;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 85vw;
+  z-index: 1;
+}
+
+.header_inner {
+  align-items: center;
+  display: flex;
+  flex-basis: 80vw;
+  justify-content: space-between;
+}
+
+.logo {
+  animation-delay: 0.5s;
+}
+
+.name {
+  animation-delay: 1.5s;
+}
+
+h1 {
+  color: #e2ddd7;
+  letter-spacing: 5px;
+}
+
+header p {
+  color: #e2ddd7;
+  justify-content: flex-end;
+}
+
+header h1, header p {
+  margin: 15px 0 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header img {
+  height: 100px;
+  margin: -15px;
+  width: 100px;
+}
+
+#topBtn {
+  background-color: #af0505;
+  border: none;
+  border-radius: 15px 15px 0 0;
+  bottom: 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  color: #e2ddd7;
+  cursor: pointer;
+  display: none;
+  font-size: 16px;
+  outline: none;
+  padding: 0.9em;
+  position: fixed;
+  right: 15px;
+  z-index: 1;
+}
+
+#topBtn:hover {
+  background-color: #e2ddd7;
+  border: 0.1px solid #af0505;
+  color: #af0505;
+}
+
+hr:first-of-type {
+  margin-top: 130px;
+}
+
+hr {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(175, 5, 5, 0.9), rgba(0, 0, 0, 0));
+  border: 0;
+  height: 4px;
+  margin: 25px auto;
+  width: 80vw;
+}
+
+main {
+  background: #af0505;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+}
+
+.section_1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 33px;
+}
+
+.section_1 img {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  width: 80vw;
+}
+
+.section_2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15vh;
+}
+
+.title {
+  display: flex;
+  flex-basis: 80vw;
+  margin-top: 15px;
+}
+
+.featured_work {
+  align-items: flex-start;
+  display: flex;
+  height: 230px;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+.title p {
+  color: #e2ddd7;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.box_1, .box_2, .box_3 {
+  align-items: center;
+  color: #e2ddd7;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 300px;
+  width: 31%;
+}
+
+.box_1 img, .box_2 img, .box_3 img {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.box_1 a, .box_2 a, .box_3 a {
+  background: #04B2E3;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.box_1 a:hover, .box_2 a:hover, .box_3 a:hover {
+  background-color: #e2ddd7;
+  color: #af0505;
+}
+
+footer {
+  background: #af0505;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  width: 85vw;
+}
+
+footer p {
+  color: #e2ddd7;
+  letter-spacing: 5px;
+  padding: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  header img {
+    height: 60px;
+    margin-left: -10px;
+    width: 60px;
+  }
+  header h1, header p {
+    font-size: 14px;
+    margin: 10px 0 10px 0;
+  }
+  header h1 {
+    letter-spacing: 2px;
+  }
+  header p, footer p {
+    font-size: 11px;
+  }
+  #topBtn {
+    font-size: 11px;
+    height: 45px;
+    padding: 0 2px;
+    right: 0;
+  }
+  hr:first-of-type {
+    margin-top: 78px;
+  }
+  hr {
+    margin: 15px auto;
+  }
+  .title p {
+    font-size: 20px;
+    margin: 0;
+  }
+  main {
+    height: auto;
+  }
+  .section_1 {
+    margin-top: 15px;
+  }
+  .section_2 {
+    margin: 0;
+  }
+  .featured_work {
+    flex-direction: column;
+    height: auto;
+  }
+  .box_1, .box_2, .box_3 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    width: 100%;
+  }
+  footer p {
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 640px) {
+  #topBtn {
+    padding: 0.9em 0.5em;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  #topBtn {
+    padding: 0.9em 0.5em;
+    right: 5px;
+  }
+  .section_2 {
+    margin-bottom: 10vh;
+  }
+}
